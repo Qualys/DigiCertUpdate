@@ -1,7 +1,18 @@
 # What it does
-Add the 'DigiCert Trusted Root G4' certificate to the Trusted Root Certification Authorities of the machine if it is not present. 
+Add the 'DigiCert Trusted Root G4' certificate to the Trusted Root Certification Authorities of the machine if it is not present.
 
-## Step by step working
+# How to check the certificate is already present or not 
+
+* Use the following command to check whether the certificate is available on the asset: 
+
+        Get-ChildItem "cert:\" -Recurse | Where-Object { $_.Thumbprint -eq "ddfb16cd4931c973a2037d3fc83a4d7d775d05e4" } | Format-List
+
+* If the certificate is not available, the output will be empty.
+* If the certificate is available on the asset, the output will be similar to the output below.
+
+  ![Certificate is available](./images/cert_available.png "Certificate is available")
+
+# Step by step working
 1. Check certificate is existing on the machine. If already installed, exit.
 2. If the file is passed as a parameter, Install the cert and exit. Else follow further steps
 3. Try to download the file from the DigiCert website and add it. If this succeeds add the cert file to the root store. 
