@@ -10,7 +10,7 @@
 
 .COPYRIGHT Copyright (c) 2022 Qualys Inc. All rights reserved.
 
-.LICENSEURI https://github.com/Qualys/DigiCertUpdate/LICENSE.md
+.LICENSEURI https://github.com/Qualys/DigiCertUpdate/blob/main/LICENSE.md
 
 .PROJECTURI https://github.com/Qualys/DigiCertUpdate/
 
