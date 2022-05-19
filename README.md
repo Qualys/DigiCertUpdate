@@ -10,7 +10,7 @@ Add the 'DigiCert Trusted Root G4' certificate to the Trusted Root Certification
 * If the certificate is not available, the output will be empty.
 * If the certificate is available on the asset, the output will be similar to the output below.
 
-  ![Certificate is available](./images/cert_available.png "Certificate is available")
+  <img src="https://raw.githubusercontent.com/Qualys/DigiCertUpdate/main/images/cert_available.png">
 
 # Step by step working
 1. Check certificate is existing on the machine. If already installed, exit.
