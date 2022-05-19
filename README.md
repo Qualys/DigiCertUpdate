@@ -29,5 +29,16 @@ Please check the script help to see the examples. To get the help, run
 
         PS C:\> .\DigiCertUpdate.ps1 -ProxyAddress "10.10.10.10" -ProxyPort 3128 -ProxyUser "admin" -ProxyPassword "abc123"
 
+# Note
+* If you are using this script with Qualys Script Central/CAR, set the PowerShell execution policy to unrestricted becuase the script is not signed.
+
+        PS C:\> Set-ExecutionPolicy Unrestricted -Force
+
+* To set the execution policy via group policy, check this link [Use Group Policy to Manage Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#use-group-policy-to-manage-execution-policy).
+* After running the script, do not forget to set the policy back to the default.
+
+        PS C:\> Set-ExecutionPolicy Default -Force
+
+
 # License
 [License](/LICENSE.md)
